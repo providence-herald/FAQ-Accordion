@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+@media (max-width: 800px) {
+  body {
+    background-image: url(/assets/images/background-pattern-mobile.svg);
+  }
+}
+
+@media (max-width: 800px) {
+  #star {
+    width: 25px;
+  }
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: hsl(292, 42%, 14%);
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: hsl(292, 42%, 14%);
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+h2:hover {
+  color: purple;
+}
+
+p {
+  color: hsl(292, 16%, 49%);
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    padding-top: 10px;
+  }
+}
+
+section {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 600px;
+  border-radius: 15px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (max-width: 800px) {
+  section {
+    width: 85%;
+    padding: 20px 20px;
+    padding-bottom: 0;
+    border-radius: 5px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+@media (max-width: 800px) {
+  .header {
+    gap: 20px;
+  }
+}
+
+.faq .question {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px 0;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .faq .question {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 800px) {
+  .faq .icon {
+    padding-left: 15px;
+  }
+}
+.faq .answer {
+  max-height: 0;
+  overflow: hidden;
+}
+.faq .active {
+  padding-bottom: 25px;
+  max-height: 300px;
+}
+.faq .solid {
+  border-top: 1px solid hsl(275, 100%, 97%);
+}/*# sourceMappingURL=main.css.map */
